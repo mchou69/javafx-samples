@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="main" prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="fx.controllers.MainController">
+  <children>
+    <HBox alignment="CENTER" layoutX="0.0" layoutY="0.0" minHeight="28.0" prefHeight="59.735107421875" prefWidth="600.0" styleClass="top_bar">
+      <children>
+        <MenuBar prefHeight="37.0" prefWidth="600.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#doLogin" text="Login"/>
+                <MenuItem mnemonicParsing="false" onAction="#doExit" text="Exit" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </HBox>
+    <Circle fill="#ccedff" layoutX="300.0" layoutY="186.0" radius="58.0" smooth="false" stroke="#66a3ff" strokeType="INSIDE" />
+    <CubicCurve controlX1="-50.0" controlX2="50.0" controlY1="-100.0" controlY2="100.0" endX="150.0" fill="DODGERBLUE" layoutX="284.0" layoutY="244.0" startX="-150.0" stroke="BLACK" />
+  </children>
+  <stylesheets>
+    <URL value="@main.css" />
+    <URL value="@menu.css" />
+  </stylesheets>
+</AnchorPane>
